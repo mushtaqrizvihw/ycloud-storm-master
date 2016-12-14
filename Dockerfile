@@ -1,4 +1,4 @@
-FROM hortonworks/ycloud-apps-base:0.1
+FROM mrizvi/ycloud-apps-base-master:0.1
 
 RUN yum install -y storm; yum clean all
 
