@@ -1,7 +1,7 @@
 FROM mrizvi/ycloud-apps-base-master:0.1
 
 RUN yum install -y storm; yum clean all
-
+RUN yum install -y hadoop
 ADD properties_file_to_yaml.sh /
 
 # For the Storm UIs on all daemons, not really sure if this is needed or not.. added for debugging UI.. UI still doesn't work
